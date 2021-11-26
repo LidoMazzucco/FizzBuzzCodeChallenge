@@ -18,7 +18,7 @@ public class FizzBuzz {
                     break;
                 }
             }
-            if(flag) value.append("Whiz");
+            if(flag) value.append("Whizz");
         }
 
         return value.toString();
