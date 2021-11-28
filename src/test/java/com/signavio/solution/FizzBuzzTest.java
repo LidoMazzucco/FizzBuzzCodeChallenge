@@ -69,7 +69,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void checkFizzBuzz_numberWithFiveDigit_returnFizz()
+    public void checkFizzBuzz_numberWithFiveDigit_returnBuzz()
     {
         int testNumber = 51;
         String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.BUZZ_MESSAGE, FizzBuzz.BUZZ_CONDITION);
