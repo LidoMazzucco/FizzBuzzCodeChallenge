@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.signavio.solution.FizzBuzzTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-28T10:54:58" hostname="W-CDP3VT2" time="0.027">
+  <properties/>
+  <testcase name="checkFizz_numberMultipleofThree_returnFizz()" classname="com.signavio.solution.FizzBuzzTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
