@@ -8,8 +8,8 @@ public class FizzBuzzTest {
     @Test
     public void checkFizz_numberMultipleOfThree_returnFizz()
     {
-        int testNumber = 3;
-        String result = FizzBuzz.checkFizz(testNumber);
+        int testNumber = 6;
+        String result = FizzBuzz.checkFizzBuzz(testNumber);
 
         Assertions.assertEquals("Fizz", result);
     }
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
     public void checkFizz_numberMultipleNotOfThree_returnEmpty()
     {
         int testNumber = 10;
-        String result = FizzBuzz.checkFizz(testNumber);
+        String result = FizzBuzz.checkFizzBuzz(testNumber);
 
         Assertions.assertEquals("", result);
     }
@@ -26,7 +26,7 @@ public class FizzBuzzTest {
     @Test
     public void checkBuzz_numberMultipleOfFive_returnBuzz()
     {
-        int testNumber = 10;
+        int testNumber = 15;
         String result = FizzBuzz.checkBuzz(testNumber);
 
         Assertions.assertEquals("Buzz", result);
@@ -35,7 +35,7 @@ public class FizzBuzzTest {
     @Test
     public void checkBuzz_numberMultipleNotOfFive_returnEmpty()
     {
-        int testNumber = 13;
+        int testNumber = 16;
         String result = FizzBuzz.checkBuzz(testNumber);
 
         Assertions.assertEquals("", result);

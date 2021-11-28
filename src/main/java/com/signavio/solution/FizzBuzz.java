@@ -2,6 +2,13 @@ package com.signavio.solution;
 
 public class FizzBuzz {
 
+    private static final String FIZZ_MESSAGE  = "Fizz";
+    private static final String BUZZ_MESSAGE = "Buzz";
+    private static final String WHIZ_MESSAGE = "Whiz";
+    private static final int FIZZ_CONDITION = 3;
+    private static final int BUZZ_CONDITION = 5;
+
+
     public static void main(String[] args) {
         String value = "";
         Integer number = 1;
@@ -16,17 +23,17 @@ public class FizzBuzz {
     public static String fizzBuzzProblem(int number) {
         StringBuilder value = new StringBuilder();
 
-        value.append(checkFizz(number));
-        value.append(checkBuzz(number));
+        value.append(checkFizzBuzz(number, FIZZ_MESSAGE, FIZZ_CONDITION));
+        value.append(checkFizzBuzz(number, BUZZ_MESSAGE, BUZZ_CONDITION));
         value.append(checkWhiz(number));
 
         return value.toString();
     }
 
-    public static String checkFizz(int number) {
+    public static String checkFizzBuzz(int number, String message, int condition) {
         String result = "";
 
-        if (number % 3 == 0) result = "Fizz";
+        if (number % condition == 0) result = message;
 
         return result;
     }
