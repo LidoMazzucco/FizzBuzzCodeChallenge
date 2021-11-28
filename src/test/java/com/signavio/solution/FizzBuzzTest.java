@@ -58,4 +58,22 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals("", result);
     }
+
+    @Test
+    public void checkFizzBuzz_numberWithThreeDigit_returnFizz()
+    {
+        int testNumber = 31;
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.FIZZ_MESSAGE, FizzBuzz.FIZZ_CONDITION);
+
+        Assertions.assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void checkFizzBuzz_numberWithFiveDigit_returnFizz()
+    {
+        int testNumber = 51;
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.BUZZ_MESSAGE, FizzBuzz.BUZZ_CONDITION);
+
+        Assertions.assertEquals("Buzz", result);
+    }
 }
