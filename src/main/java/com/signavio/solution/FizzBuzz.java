@@ -5,10 +5,10 @@ public class FizzBuzz {
     public static String fizzBuzzProblem(int number)
     {
         StringBuilder value = new StringBuilder();
-        //Optional.of(number).map( -> (number%3 == 0) ? "Fizz");
 
-        if (number %3 == 0) value.append("Fizz");
-        if (number %5 == 0) value.append("Buzz");
+        value.append(checkFizz(number));
+        value.append(checkBuzz(number));
+
         if (value.length() == 0) {
             boolean flag = true;
             int by2 = number/2;
@@ -23,6 +23,20 @@ public class FizzBuzz {
 
         return value.toString();
     }
+
+    public static String checkFizz(int number) {
+        String result = "";
+        if (number %3 == 0) result = "Fizz";
+        return result;
+    }
+
+    public static String checkBuzz(int number) {
+        String result = "";
+        if (number %5 == 0) result = "Buzz";
+        return result;
+    }
+
+
 
     public static void main (String[] args)
     {
