@@ -24,7 +24,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void checkFizz_numberMultipleOfFive_returnBuzz()
+    public void checkBuzz_numberMultipleOfFive_returnBuzz()
     {
         int testNumber = 10;
         String result = FizzBuzz.checkBuzz(testNumber);
@@ -33,10 +33,28 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void checkFizz_numberMultipleNotOfFive_returnEmpty()
+    public void checkBuzz_numberMultipleNotOfFive_returnEmpty()
     {
         int testNumber = 13;
-        String result = FizzBuzz.checkFizz(testNumber);
+        String result = FizzBuzz.checkBuzz(testNumber);
+
+        Assertions.assertEquals("", result);
+    }
+
+    @Test
+    public void checkWhiz_primeNumber_returnWhiz()
+    {
+        int testNumber = 17;
+        String result = FizzBuzz.checkWhiz(testNumber);
+
+        Assertions.assertEquals("Whiz", result);
+    }
+
+    @Test
+    public void checkWhiz_notPrimeNumber_returnEmpty()
+    {
+        int testNumber = 20;
+        String result = FizzBuzz.checkWhiz(testNumber);
 
         Assertions.assertEquals("", result);
     }
