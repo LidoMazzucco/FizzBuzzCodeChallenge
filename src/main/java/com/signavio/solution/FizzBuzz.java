@@ -2,11 +2,11 @@ package com.signavio.solution;
 
 public class FizzBuzz {
 
-    private static final String FIZZ_MESSAGE  = "Fizz";
-    private static final String BUZZ_MESSAGE = "Buzz";
-    private static final String WHIZ_MESSAGE = "Whiz";
-    private static final int FIZZ_CONDITION = 3;
-    private static final int BUZZ_CONDITION = 5;
+    public static final String FIZZ_MESSAGE  = "Fizz";
+    public static final String BUZZ_MESSAGE = "Buzz";
+    public static final String WHIZ_MESSAGE = "Whiz";
+    public static final int FIZZ_CONDITION = 3;
+    public static final int BUZZ_CONDITION = 5;
 
 
     public static void main(String[] args) {
@@ -38,14 +38,6 @@ public class FizzBuzz {
         return result;
     }
 
-    public static String checkBuzz(int number) {
-        String result = "";
-
-        if (number % 5 == 0) result = "Buzz";
-
-        return result;
-    }
-
     public static String checkWhiz(int number) {
         String result = "";
         boolean dividerFounded = false;
@@ -56,7 +48,7 @@ public class FizzBuzz {
                 break;
             }
         }
-        if (!dividerFounded) result = "Whiz";
+        if (!dividerFounded) result = WHIZ_MESSAGE;
 
         return result;
     }

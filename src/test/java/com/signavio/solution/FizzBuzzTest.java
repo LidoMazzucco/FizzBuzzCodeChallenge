@@ -6,37 +6,37 @@ import org.junit.jupiter.api.Test;
 public class FizzBuzzTest {
 
     @Test
-    public void checkFizz_numberMultipleOfThree_returnFizz()
+    public void checkFizzBuzz_numberMultipleOfThree_returnFizz()
     {
         int testNumber = 6;
-        String result = FizzBuzz.checkFizzBuzz(testNumber);
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.FIZZ_MESSAGE, FizzBuzz.FIZZ_CONDITION);
 
         Assertions.assertEquals("Fizz", result);
     }
 
     @Test
-    public void checkFizz_numberMultipleNotOfThree_returnEmpty()
+    public void checkFizzBuzz_numberMultipleNotOfThree_returnEmpty()
     {
-        int testNumber = 10;
-        String result = FizzBuzz.checkFizzBuzz(testNumber);
+        int testNumber = 7;
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.FIZZ_MESSAGE, FizzBuzz.FIZZ_CONDITION);
 
         Assertions.assertEquals("", result);
     }
 
     @Test
-    public void checkBuzz_numberMultipleOfFive_returnBuzz()
+    public void checkFizzBuzz_numberMultipleOfFive_returnBuzz()
     {
-        int testNumber = 15;
-        String result = FizzBuzz.checkBuzz(testNumber);
+        int testNumber = 10;
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.BUZZ_MESSAGE, FizzBuzz.BUZZ_CONDITION);
 
         Assertions.assertEquals("Buzz", result);
     }
 
     @Test
-    public void checkBuzz_numberMultipleNotOfFive_returnEmpty()
+    public void checkFizzBuzz_numberMultipleNotOfBuzz_returnEmpty()
     {
-        int testNumber = 16;
-        String result = FizzBuzz.checkBuzz(testNumber);
+        int testNumber = 12;
+        String result = FizzBuzz.checkFizzBuzz(testNumber, FizzBuzz.BUZZ_MESSAGE, FizzBuzz.BUZZ_CONDITION);
 
         Assertions.assertEquals("", result);
     }

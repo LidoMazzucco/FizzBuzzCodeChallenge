@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.signavio.solution.FizzBuzzTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-11-28T11:37:28" hostname="W-CDP3VT2" time="0.03">
+<testsuite name="com.signavio.solution.FizzBuzzTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-11-28T12:46:58" hostname="W-CDP3VT2" time="0.031">
   <properties/>
-  <testcase name="checkBuzz_numberMultipleNotOfFive_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.025"/>
-  <testcase name="checkBuzz_numberMultipleOfFive_returnBuzz()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
-  <testcase name="checkFizz_numberMultipleNotOfThree_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
+  <testcase name="checkFizzBuzz_numberMultipleNotOfThree_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.025"/>
+  <testcase name="checkFizzBuzz_numberMultipleOfFive_returnBuzz()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
+  <testcase name="checkFizzBuzz_numberMultipleNotOfBuzz_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
   <testcase name="checkWhiz_notPrimeNumber_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
-  <testcase name="checkWhiz_primeNumber_returnWhiz()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
-  <testcase name="checkFizz_numberMultipleOfThree_returnFizz()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
+  <testcase name="checkWhiz_primeNumber_returnWhiz()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
+  <testcase name="checkFizzBuzz_numberMultipleOfThree_returnFizz()" classname="com.signavio.solution.FizzBuzzTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
