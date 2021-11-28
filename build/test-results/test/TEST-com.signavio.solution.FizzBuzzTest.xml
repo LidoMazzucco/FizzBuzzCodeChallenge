@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.signavio.solution.FizzBuzzTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-28T10:54:58" hostname="W-CDP3VT2" time="0.027">
+<testsuite name="com.signavio.solution.FizzBuzzTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-11-28T11:13:58" hostname="W-CDP3VT2" time="0.029">
   <properties/>
-  <testcase name="checkFizz_numberMultipleofThree_returnFizz()" classname="com.signavio.solution.FizzBuzzTest" time="0.027"/>
+  <testcase name="checkFizz_numberMultipleOfFive_returnBuzz()" classname="com.signavio.solution.FizzBuzzTest" time="0.026"/>
+  <testcase name="checkFizz_numberMultipleNotOfThree_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
+  <testcase name="checkFizz_numberMultipleOfThree_returnFizz()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
+  <testcase name="checkFizz_numberMultipleNotOfFive_returnEmpty()" classname="com.signavio.solution.FizzBuzzTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
