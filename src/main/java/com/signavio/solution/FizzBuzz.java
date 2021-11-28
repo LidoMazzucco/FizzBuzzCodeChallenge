@@ -32,8 +32,10 @@ public class FizzBuzz {
 
     public static String checkFizzBuzz(int number, String message, int condition) {
         String result = "";
+        boolean isMultipleOfCondition = number % condition == 0;
+        boolean isSecondDigitEqualToCondition = (number/10)%10 == condition;
 
-        if (number % condition == 0) result = message;
+        if (isMultipleOfCondition || isSecondDigitEqualToCondition) result = message;
 
         return result;
     }
